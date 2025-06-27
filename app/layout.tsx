@@ -14,7 +14,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        {children}
+        <main className="container mx-auto p-4">{children}</main>
       </body>
     </html>
   );
