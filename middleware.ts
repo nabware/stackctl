@@ -6,12 +6,5 @@ export function middleware(request: NextRequest) {
 }
 
 export const config = {
-    matcher: [
-        {
-            source: "/dashboard/*",
-            has: [
-                { type: "header", key: "Authorization" }
-            ]
-        },
-    ],
+    matcher: "/dashboard/:path*",
 }
